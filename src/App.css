@@ -1,0 +1,95 @@
+*{
+  margin:0;
+  /* font-family: 'Questrial', sans-serif; */
+  font-family: 'Acme', sans-serif;
+}
+
+body{
+  background-color: #e4f9f5;
+}
+
+.app__header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+
+.app__stats{
+  display: flex;
+  justify-content: space-between;
+}
+
+.app{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.app__left{
+  flex: 0.9;
+}
+
+.app__right{
+  background-color:#212121!important ;
+  color: #e4f9f5!important;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__right .MuiCardContent-root{
+ display: flex;
+ flex-direction: column;
+ flex-grow: 1;
+}
+
+.infoBox{
+  background-color:#14ffec!important ;
+}
+
+.table{
+  margin-top: 20px;
+  overflow-y: scroll;
+  height: 400px;
+  color: #14ffec;
+}
+
+.table tr{
+  display: flex;
+  justify-content: space-between;
+}
+
+.table td{
+  padding: .5rem;
+}
+
+.table tr:nth-of-type(odd){
+  background-color: #323232
+}
+
+
+.app__dropdown{
+  background-color: #f4f4f4;
+}
+
+.app__graph{
+  flex-grow: 1;
+}
+
+.app_graphTitle{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 990px){
+  .app{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px){
+.app__stats{
+  flex-direction: column;
+}
+}
